@@ -1,6 +1,8 @@
 const char = "hdsldgld454lgdlgldglgdL"
 console.log(char[char.length - 1])  // L
 
+console.log("oeoeifw"[1]) // e
+
 const char2 = "   dddiiiludil    "
 console.log(char2.length) //18
 console.log(char2.trim().length) //11

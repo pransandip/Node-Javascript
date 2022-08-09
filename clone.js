@@ -38,4 +38,5 @@ console.log('array9->', array9) //array9-> [ 'item1', 'item2', 'item3', 'sandy',
 
 let array10 = ['youtube', 'data science']
 let array11 = [...array1, ...array10]
+console.log("🚀 ~ file: clone.js ~ line 41 ~ array11", array11)
 console.log('array11->', array11) //array11-> [ 'item1', 'item2', 'item3', 'youtube', 'data science' ]

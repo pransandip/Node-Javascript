@@ -39,12 +39,68 @@ const details = {
     email: 'pransandip@gmail.com'
 }
 
-for(let key in details){
+for (let key in details) {
     console.log(key) // name age.. etc
 }
 
-for(let key in details){
+console.log("=============================================================================")
+
+for (let key in details) {
     console.log(details[key]) // sandip Roy.. etc
 }
+console.log("=============================================================================")
 
+for (let keys in details) {
+    console.log(`${keys} : ${details[keys]}`) // name : Sandip Roy..
+}
+
+// ?-- Object.keys give us an array --? //
+console.log(Object.keys(details)) // ['name', 'age', 'hobbies', 'address', 'gender',  'active', 'email']
+
+console.log(typeof Object.keys(details)) // object
+
+console.log("=============================================================================")
+
+let val = Array.isArray(Object.keys(details))
+console.log(val) // true
+
+console.log("=============================================================================")
+
+for (let key of Object.keys(details)) {
+    if (details[key] === 'Sandip Roy') {
+        details.name = 'Sandy Roy'
+    }
+
+}
+
+console.log("Details->", details) // name: 'Sandy Roy',...
+
+console.log("=============================================================================")
+
+// ? -- Computed properties -- ? //
+
+const key1 = 'item1'
+const key2 = 'item2'
+
+const value1 = 'CD Player'
+const value2 = 'DVD Player'
+
+let obj = {
+    key1 : value1,
+    key2 : value2,
+}
+console.log('obj ->', obj) // obj -> { key1: 'CD Player', key2: 'DVD Player' } here key remaining same
+
+
+let obj2 = {
+    [key1] : value1,
+    [key2] : value2,
+}
+console.log('obj2 ->', obj2)  // obj2 -> { item1: 'CD Player', item2: 'DVD Player' }
+
+
+let obj3 = {}
+obj3[key1] = value1
+obj3[key2] = value2
+console.log('obj3->', obj3)  // obj3-> { item1: 'CD Player', item2: 'DVD Player' }
 
