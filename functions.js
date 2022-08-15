@@ -68,3 +68,6 @@ console.log(isArray({..."jgkg"})) // false
 
 const firstLatter = char => char[0]
 console.log(firstLatter('sandy')) // s 
+
+const printObj = items => console.log(items)
+printObj({..."jgkg"}) // { '0': 'j', '1': 'g', '2': 'k', '3': 'g' }
