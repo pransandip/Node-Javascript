@@ -46,6 +46,7 @@ console.log(ans2) // true
 
 // fill method
 // use new keywork for Array constructor
+// value start end-exclusive
 
 const myArray = new Array(10).fill(-1)
 console.log("🚀 ~ myArray", myArray) // 🚀 ~ myArray [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1]

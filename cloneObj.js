@@ -1,0 +1,2 @@
+// clone using Object.assign
+
