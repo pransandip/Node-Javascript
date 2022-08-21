@@ -92,3 +92,4 @@ console.log(userInfo) // Map(1) { { id: 1, name: 'sandip' } => { age: 28, gender
 console.log(userInfo.get(user)) // { age: 28, gender: 'male' }
 console.log(userInfo.get(user).age) // 28
 
+
