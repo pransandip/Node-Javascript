@@ -16,3 +16,19 @@ user2.gender = 'male'
 console.log('user->', user) // user-> { id: 1, name: 'sandip', gender: 'male' }
 console.log('user2->', user2) // user2-> { id: 1, name: 'sandip', gender: 'male' }
 
+
+// const user3 = Object.assign(user) //:-ok
+const user3 = Object.assign({}, user)
+console.log(user3) // { id: 1, name: 'sandip', gender: 'male' } 
+
+
+// ??--------- optional chaining -----------?? //
+
+const obj = {
+    id : 1,
+    name : 'sandip',
+    // address: {houseNumber: '1/21'}
+}
+
+console.log(obj?.name)  // sandip
+console.log(obj?.address?.houseNumber)  // undefined
