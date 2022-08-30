@@ -22,3 +22,9 @@ console.log(mixed) //[ 'mangos', 'kiwi', 'oranges', 'grapes', 'banana' ]
 /** shift will remove element from begining of a array */
 mixed.shift()
 console.log(mixed)
+
+console.log(Array.from('foo'));
+// expected output: Array ["f", "o", "o"]
+
+console.log(Array.from([1, 2, 3], x => x + x));
+// expected output: Array [2, 4, 6]

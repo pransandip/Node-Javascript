@@ -7,7 +7,7 @@ class Animal {
     }
 
     eat() {
-        return `${this.name} is eating`;
+        return `${this.name} is eating (super class)`;
     }
 
     isSuperCute() {
@@ -46,3 +46,5 @@ console.log(tom.run()) // Tom is running 45 kmph
 console.log(tom.eat()) // Tom is eating (Base class)
 
 
+const jerry = new Animal('Jerry', 0.6, 50)
+console.log(jerry.eat()) // Jerry is eating (super class)
