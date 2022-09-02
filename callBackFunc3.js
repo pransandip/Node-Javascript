@@ -20,8 +20,8 @@ function changeText(element, text, color, time, onSuccess, onfailure) {
     }, time);
 }
 
-changeText(heading1, 'Hello India', 'Yellow', 3000, ()=>{
-    changeText(heading2, 'Hello Sandy', 'Red', 2000)
+changeText(heading1, 'Hello India', 'Yellow', 1000, ()=>{
+    changeText(heading2, 'Hello Sandy', 'Red', 1000)
 }, ()=>{
     console.log('Callback Element does not exist')
 })
