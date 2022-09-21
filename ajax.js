@@ -11,3 +11,13 @@
 // 2.) fetch api (new way of doing)
 // 3.) axios (this is a third party library)
 
+// we don't use data in xml format anymore.
+// we use JSON now.
+
+// HTTP status codes:
+
+// 1.) 1xx informational response – the request was received, continuing process
+// 2.) 2xx successful – the request was successfully received, understood, and accepted
+// 3.) 3xx redirection – further action needs to be taken in order to complete the request
+// 4.) 4xx client error – the request contains bad syntax or cannot be fulfilled
+// 5.) 5xx server error – the server failed to fulfil an apparently valid request
