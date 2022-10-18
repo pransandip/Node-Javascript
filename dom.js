@@ -40,6 +40,7 @@ console.log(headline.style) // CSSStyleDeclaration {accentColor: '', additiveSy
 headline.style.color = '#556688'
 headline.style.backgroundColor = 'white'
 
+// TODO FIXME
 console.log('--------------------------------------------------')
 
 const link = document.querySelector('a') // return first anchor tag
@@ -89,7 +90,7 @@ console.log('--------------------------------------------------')
 tagItems = Array.from(tagItems)
 console.log(Array.isArray(tagItems)) // true
 
-tagItems.forEach((item)=>{
+tagItems.forEach((item) => {
     console.log('forEach->', item)
 })
 
