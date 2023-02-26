@@ -1,7 +1,6 @@
-// JS 
+// JS
 // synchronous progamming language, means it's execute one line at a time
 // and single threaded, means single thread will execute one line then go to next line
-
 
 // compilation
 // code execution
@@ -18,11 +17,11 @@
 // 1.) compile
 // 2.) code execute
 
-// But in official document of Ecma script compilation not mentioned 
+// But in official document of Ecma script compilation not mentioned
 // only 1.)Early error checking, 2.)variables apropiate scope
 // now to do this work you have to parse the code first*
 
-// compilation phase also in three parts --> 
+// compilation phase also in three parts -->
 // 1.) Tokenizing/Lexing :- here all the code divide into small pieces
 // 2.) Parsing* :- important! than creates AST(Abstruct syntax tree) by understanding those small pieces (Tokens)
 // 3.) Code generation (some kind of executable code) :- than we can execute (code execution phase)
