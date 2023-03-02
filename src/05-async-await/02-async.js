@@ -1,3 +1,5 @@
+console.log("start"); // async test
+
 const URL = "https://jsonplaceholder.typicode.com/posts";
 
 const getData = async () => {
@@ -12,13 +14,20 @@ getData();
 
 const getData2 = async () => {
   const response = await fetch(URL);
+  if (!response.ok) {
+    throw new Error("Some thing went wrong");
+  }
   const data = await response.json();
   return data;
 };
 
-getData2().then((data) => {
-  console.log(data);
-});
+getData2()
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 /**---------- BREAK ----------**/
 
@@ -38,3 +47,5 @@ const func = async () => {
 };
 
 func();
+
+console.log("End");

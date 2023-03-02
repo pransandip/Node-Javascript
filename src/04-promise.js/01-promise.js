@@ -1,3 +1,5 @@
+console.log("Start"); // async test
+
 const bucket = ["coffee", "chips", "vegetables", "salt", "rice"];
 
 // * this is promise object
@@ -21,3 +23,5 @@ friedRice
   .catch((err) => {
     console.log(err.message);
   });
+
+console.log("End");
