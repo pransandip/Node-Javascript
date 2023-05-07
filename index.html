@@ -29,13 +29,27 @@
       .container button {
         margin-left: 55px;
       }
+      button {
+        width: 100px;
+        margin-right: 10px;
+      }
+      .div1 {
+        display: flex;
+      }
     </style>
-    <script src="./src/05-async-await/04-async.js" defer></script>
+    <!-- <script src="./src/05-async-await/04-async.js" defer></script> -->
   </head>
 
   <body>
-    <h1 class="heading1">Hello World</h1>
+    <!-- <h1 class="heading1">Hello World</h1>
     <h1 class="heading2">Hello World</h1>
-    <h1 class="heading3">Hello World</h1>
+    <h1 class="heading3">Hello World</h1> -->
+    <div class="div1">
+      <button id="btnCount1" onclick="counter1()">0</button>
+
+      <button id="btnCount2" onclick="counter2()">0</button>
+    </div>
+
+    <script src="./interview/004-closure-ex.js"></script>
   </body>
 </html>
